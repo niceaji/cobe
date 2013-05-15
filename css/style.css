@@ -1,0 +1,33 @@
+blockquote {
+    display: block;
+}
+blockquote p {
+    letter-spacing: -1px;
+
+}
+
+.item {
+    border-radius: 12px;
+    border:3px solid #eee;
+    padding-top: 10px;
+    /*padding-bottom: : 20px;*/
+
+}
+.item .count{
+    text-align: right;
+    padding-right: 5px;
+}
+.item .count span {
+
+    border-radius: 6px;
+    padding: 5px;
+
+}
+.item button.comment {
+    clear:both ;
+}
+.item .article {
+    /*font-size:120;*/
+    clear:both ;
+    margin-bottom: 20px;
+}
