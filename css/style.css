@@ -1,33 +1,51 @@
-blockquote {
-    display: block;
+body{
+	padding-top: 60px;
 }
-blockquote p {
-    letter-spacing: -1px;
-
+h3 {
+	letter-spacing: -1px;
 }
-
+.container {
+	/*width:980px;*/
+}
 .item {
-    border-radius: 12px;
-    border:3px solid #eee;
-    padding-top: 10px;
-    /*padding-bottom: : 20px;*/
+	background-color: #eee;
+	/*border: 8px solid #eee;*/
+	-webkit-border-radius: 12px;
+	        border-radius: 12px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.item blockquote{
+	border-color:#999;
+	margin:20px;
+	letter-spacing: -1px;
+	
+}
+.item a.time {
+	color:#999;
+	padding-left: 10px;
+}
 
-}
-.item .count{
-    text-align: right;
-    padding-right: 5px;
-}
-.item .count span {
-
-    border-radius: 6px;
-    padding: 5px;
-
-}
-.item button.comment {
-    clear:both ;
-}
 .item .article {
-    /*font-size:120;*/
-    clear:both ;
-    margin-bottom: 20px;
+	/*font-size:120%;*/
+	margin: 10px 0;
+	padding: 20px 20px 10px 30px;
+	border-top:3px solid #ddd;
+	/*clear:both;*/
+	/*padding-top:10px;*/
 }
+
+.item .comment {
+}
+.item .comment button:first-child {
+	margin-left: 20px;
+}
+.item .badge-wrap {
+	text-align: right;
+}
+.item .badge-wrap span:last-child {
+	margin-right: 20px;
+}
+
+
+
