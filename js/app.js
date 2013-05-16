@@ -1,16 +1,22 @@
+
+var MY_LINK = "http://media.daum.net/netizen/mycomment?rMode=otherMy&allComment=T&userId=#{userid}&daumName=#{name}";
+
+
 var ItemModel = Backbone.Model.extend({
 
-
-	
-});
-var ItemCollection = Backbone.Collection.extend({
-	model : ItemModel,
 	parse : function(data){
 
+		// console.log(data)
+		data.content = data.content.replace(/\r\n/g,"<br>");
 		
 		return data;
 
 	}
+	
+});
+var ItemCollection = Backbone.Collection.extend({
+	model : ItemModel
+
 });
 var ItemView = Backbone.View.extend({
 
@@ -43,7 +49,7 @@ var AppView = Backbone.View.extend({
 	},
 	addAll : function(){
 
-		console.log(this.collection.models)
+		// console.log(this.collection.models)
 
 		this.collection.each(function(item,index){
 
