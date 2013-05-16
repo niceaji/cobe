@@ -6,7 +6,7 @@ var ItemModel = Backbone.Model.extend({
 	parse : function(data){
 
 		// console.log(data)
-		data.content = data.content.replace(/\r\n/g,"<br>").trim();
+		data.content = data.content.trim().replace(/\r\n/g,"<br>");
 		
 		return data;
 

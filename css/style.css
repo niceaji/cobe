@@ -32,6 +32,9 @@ h3 {
 .item:hover blockquote{
 	border-color:#999;
 }
+.item a.name{
+	font-size: 120%;
+}
 .item a.time {
 	color:#999;
 	padding-left: 10px;
