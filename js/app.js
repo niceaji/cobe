@@ -16,7 +16,7 @@ var ItemView = Backbone.View.extend({
 		this.listenTo(this.collection, "reset", this.render );
 		// this.listenTo(this.model, "add" , this.render);
 		
-		this.collection.url = 'data/20130515.js';
+		this.collection.url = 'data/20130516.js';
 		this.collection.fetch({reset:true});
 
 
