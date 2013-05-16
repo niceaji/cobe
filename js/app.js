@@ -4,7 +4,13 @@ var ItemModel = Backbone.Model.extend({
 	
 });
 var ItemCollection = Backbone.Collection.extend({
-	model : ItemModel
+	model : ItemModel,
+	parse : function(data){
+
+		
+		return data;
+
+	}
 });
 var ItemView = Backbone.View.extend({
 
