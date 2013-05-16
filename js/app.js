@@ -6,7 +6,7 @@ var ItemModel = Backbone.Model.extend({
 
 	parse : function(data){
 
-		console.log(data)
+		// console.log(data)
 		data.content = data.content.replace(/\r\n/g,"<br>");
 		
 		return data;
@@ -23,9 +23,17 @@ var ItemView = Backbone.View.extend({
 	// el : $('.item-wrap'),
 	// className :'item-parent',
 	template : _.template($('#itemViewTemplate').html()),
+	events : {
+
+		"click .comment .btn": "openChildComment"
+	},
 
 	initialize : function(){
 
+	},
+	openChildComment : function(){
+
+		console.log(11)
 	},
 	render :function(){
 		// console.log(this.model.toJSON())
