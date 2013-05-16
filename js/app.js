@@ -12,11 +12,10 @@ var ItemView = Backbone.View.extend({
 	template : _.template($('#itemViewTemplate').html()),
 
 	initialize : function(model){
-
 		this.model = model;
 	},
 	render :function(){
-		console.log(this)
+		// console.log(this.model.toJSON())
 		this.$el.append( this.template( this.model.toJSON() ) );
 		return this;
 	}
