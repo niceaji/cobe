@@ -1,5 +1,6 @@
 var ItemModel = Backbone.Model.extend({
 
+
 	
 });
 var ItemCollection = Backbone.Collection.extend({
@@ -8,7 +9,7 @@ var ItemCollection = Backbone.Collection.extend({
 var ItemView = Backbone.View.extend({
 
 	// el : $('.item-wrap'),
-	// className :'item row',
+	// className :'item-parent',
 	template : _.template($('#itemViewTemplate').html()),
 
 	initialize : function(model){
@@ -28,12 +29,13 @@ var AppView = Backbone.View.extend({
 	initialize : function(){
 
 		this.collection = new ItemCollection();
-		this.listenTo(this.collection, "reset", this.render );
+		this.listenTo(this.collection, "reset", this.addAll );
 		
 		this.collection.url = 'data/20130516.js';
 		this.collection.fetch({reset:true});
+		
 	},
-	render : function(){
+	addAll : function(){
 
 		// console.log(this.collection.models)
 
