@@ -20,6 +20,9 @@ h3 {
 	margin-bottom:5px;
 
 }
+.item:hover {
+	background-color: #eee;
+}
 .item blockquote{
 	/*border-color:#999;*/
 	margin:3px 10px 0 10px;
