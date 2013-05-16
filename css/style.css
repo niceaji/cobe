@@ -14,8 +14,8 @@ h3 {
 .item {
 	/*background-color: #eee;*/
 	border-bottom: 3px solid #eee;
-/*	-webkit-border-radius: 12px;
-	        border-radius: 12px;*/
+	-webkit-border-radius: 12px;
+	        border-radius: 12px;
 	margin-top:5px;
 	margin-bottom:5px;
 
