@@ -33,7 +33,9 @@ h3 {
 	color:#999;
 	padding-left: 10px;
 }
-
+.item .badge {
+	margin:5px 5px 0 5px;
+}
 .item .article {
 	/*font-size:120%;*/
 	/*margin: 10px 0;*/
