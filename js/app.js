@@ -10,33 +10,42 @@ var ItemView = Backbone.View.extend({
 	// el : $('.item-wrap'),
 	template : _.template($('#itemViewTemplate').html()),
 
-	initialize : function(){
+	initialize : function(model){
 
-		this.collection = new ItemCollection();
-		this.listenTo(this.collection, "reset", this.render );
+		// this.collection = new ItemCollection();
+		// this.listenTo(this.collection, "reset", this.render );
 		// this.listenTo(this.model, "add" , this.render);
 		
-		this.collection.url = 'data/20130516.js';
-		this.collection.fetch({reset:true});
-
-
+		this.model = model;
 	},
 	render :function(){
 
-		console.log(arguments)
 
-		this.$el.append( this.template() );
-
-
+		this.$el.append( this.template(this.model) );
 		return this;
-
-
 	}
 
 });
 var AppView = Backbone.View.extend({
+	el : '.item-wrap',
+	initialize : function(){
+
+		this.collection = new ItemCollection();
+		this.listenTo(this.collection, "reset", this.render );
+		
+		this.collection.url = 'data/20130516.js';
+		this.collection.fetch({reset:true});
+	},
+	render : function(){
+
+		this.collection.each(function(item){
+
+			this.$el.append( new ItemView(item).render().el ) 
+		});
+
+	}
 
 
 });
 
-new ItemView();
+new AppView();
