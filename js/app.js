@@ -58,8 +58,10 @@ var AppView = Backbone.View.extend({
 
 			item.set({index:index});
 			this.$el.append( new ItemView({model:item}).render().$el );
+
 		}.bind(this));
 
+		$(".timeago").timeago();
 	}
 
 });

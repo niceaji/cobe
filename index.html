@@ -34,14 +34,14 @@
   <div class="item row">
       <span class="badge"><%=index+1%></span>
       <div class="article ">
-          <a href="http://media.daum.net/v/<%=newsid%>" target="_blank"><i class="icon-forward"></i><%=newsTitle%></a>
+          <a href="http://media.daum.net/v/<%=newsid%>" target="_blank"><i class="icon-pencil"></i> <%=newsTitle%></a>
       </div>
       <blockquote class="">
         <p><%=content%></p>
         <small>
           <i class="icon-user"></i>
           <a href="http://media.daum.net/netizen/mycomment?rMode=otherMy&allComment=T&userId=<%=userid%>&daumName=<%=name%>" target="_blank"><%=name%></a> 
-          <a href="#" class="time">4분전</a>
+          <a href="#" class="time timeago" title="<%=new Date(time)%>"></a>
         </small>
       </blockquote>
       
@@ -64,6 +64,7 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
 
+<script src="js/jquery.timeago.js"></script>
 <script src="js/app.js"></script>
 
 </body>

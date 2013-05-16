@@ -33,23 +33,24 @@ h3 {
 
 .item .article {
 	/*font-size:120%;*/
-	margin: 10px 0;
-	padding: 5px 20px 0px 30px;
+	/*margin: 10px 0;*/
+	padding: 5px 20px 0px 20px;
 	/*border-top:3px solid #ddd;*/
 	/*clear:both;*/
 	/*padding-top:10px;*/
 }
 
 .item .comment {
+	margin-bottom: 10px;
 }
-.item .comment button:first-child {
-	margin-left: 20px;
+.item .comment a:first-child {
+	margin-left: 10px;
 }
 .item .badge-wrap {
 	text-align: right;
 }
 .item .badge-wrap span:last-child {
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
 
