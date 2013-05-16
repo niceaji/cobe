@@ -12,8 +12,8 @@ var ItemView = Backbone.View.extend({
 	// className :'item-parent',
 	template : _.template($('#itemViewTemplate').html()),
 
-	initialize : function(model){
-		this.model = model;
+	initialize : function(){
+
 	},
 	render :function(){
 		// console.log(this.model.toJSON())
@@ -33,14 +33,16 @@ var AppView = Backbone.View.extend({
 		
 		this.collection.url = 'data/20130516.js';
 		this.collection.fetch({reset:true});
-		
+
 	},
 	addAll : function(){
 
-		// console.log(this.collection.models)
+		console.log(this.collection.models)
 
-		this.collection.each(function(item){
-			this.$el.append( new ItemView(item).render().$el );
+		this.collection.each(function(item,index){
+
+			item.set({index:index});
+			this.$el.append( new ItemView({model:item}).render().$el );
 		}.bind(this));
 
 	}
