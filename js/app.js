@@ -1,5 +1,4 @@
 
-var MY_LINK = "http://media.daum.net/netizen/mycomment?rMode=otherMy&allComment=T&userId=#{userid}&daumName=#{name}";
 
 
 var ItemModel = Backbone.Model.extend({
@@ -25,16 +24,12 @@ var ItemView = Backbone.View.extend({
 	template : _.template($('#itemViewTemplate').html()),
 	events : {
 
-		"click .comment .btn": "openChildComment"
 	},
 
 	initialize : function(){
 
 	},
-	openChildComment : function(){
 
-		console.log(11)
-	},
 	render :function(){
 		// console.log(this.model.toJSON())
 		this.$el.append( this.template( this.model.toJSON() ) );
