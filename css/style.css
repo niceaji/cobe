@@ -8,7 +8,7 @@ h3 {
 	/*width:980px;*/
 }
 .item-wrap {
-	
+	/*border:1px solid #ddd;*/
 }
 .item {
 	/*background-color: #eee;*/
@@ -17,7 +17,7 @@ h3 {
 	        border-radius: 12px;*/
 	margin-top:5px;
 	margin-bottom:5px;
-	border-bottom: 4px solid #eee;
+
 }
 .item blockquote{
 	/*border-color:#999;*/

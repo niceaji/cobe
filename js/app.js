@@ -8,6 +8,7 @@ var ItemCollection = Backbone.Collection.extend({
 var ItemView = Backbone.View.extend({
 
 	// el : $('.item-wrap'),
+	// className :'item row',
 	template : _.template($('#itemViewTemplate').html()),
 
 	initialize : function(model){
@@ -15,8 +16,8 @@ var ItemView = Backbone.View.extend({
 		this.model = model;
 	},
 	render :function(){
-
-		this.$el.append( this.template(this.model.toJSON()) );
+		console.log(this)
+		this.$el.append( this.template( this.model.toJSON() ) );
 		return this;
 	}
 
@@ -35,10 +36,10 @@ var AppView = Backbone.View.extend({
 	},
 	render : function(){
 
-		console.log(this.collection.models)
+		// console.log(this.collection.models)
 
 		this.collection.each(function(item){
-			this.$el.append( new ItemView(item).render().el );
+			this.$el.append( new ItemView(item).render().$el );
 		}.bind(this));
 
 	}
