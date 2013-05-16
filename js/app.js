@@ -12,10 +12,6 @@ var ItemView = Backbone.View.extend({
 
 	initialize : function(model){
 
-		// this.collection = new ItemCollection();
-		// this.listenTo(this.collection, "reset", this.render );
-		// this.listenTo(this.model, "add" , this.render);
-		
 		this.model = model;
 	},
 	render :function(){
@@ -39,13 +35,13 @@ var AppView = Backbone.View.extend({
 	},
 	render : function(){
 
-		this.collection.each(function(item){
+		console.log(this.collection.models)
 
-			this.$el.append( new ItemView(item).render().el ) 
+		this.collection.each(function(item){
+			this.$el.append( new ItemView(item).render().el );
 		}.bind(this));
 
 	}
-
 
 });
 

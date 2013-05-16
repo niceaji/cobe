@@ -34,7 +34,7 @@
   <div class="item row">
 
       <blockquote class="">
-        <p><%=contents%></p>
+        <p><%=content%></p>
         <small>
           <i class="icon-user"></i>
           <a href="#"><%=name%></a> 
@@ -43,16 +43,16 @@
       </blockquote>
       
       <div class="badge-wrap ">
-          <span class="badge badge-success"><i class="icon-thumbs-up icon-white"></i> 121</span>
-          <span class="badge badge-inverse"><i class="icon-thumbs-down icon-white"></i> 32</span>
+          <span class="badge badge-success"><i class="icon-thumbs-up icon-white"></i> <%=recommendCount%></span>
+          <span class="badge badge-inverse"><i class="icon-thumbs-down icon-white"></i> <%=disagreeCount%></span>
       </div>
 
       <div class="comment ">
-          <button class="btn btn-info"><i class="icon-comment icon-white"></i> 2</button>
+          <button class="btn btn-info"><i class="icon-comment icon-white"></i> <%=childCount%></button>
       </div>
 
       <div class="article ">
-          <a href="" target="_blank"><i class="icon-forward"></i>7G 연속 안타 행진…시즌 20득점 (1보)</a>
+          <a href="" target="_blank"><i class="icon-forward"></i><%=newsTitle%></a>
       </div>
       
   </div>  
