@@ -32,6 +32,7 @@
   <!-- <h3>2013.05.14</h3> -->
 
   <div class="item row">
+      <span class="badge"><%=id%></span>
       <blockquote class="">
         <p><%=content%></p>
         <small>
@@ -42,12 +43,12 @@
       </blockquote>
       
       <div class="badge-wrap ">
-          <span class="badge badge-success"><i class="icon-thumbs-up icon-white"></i> <%=recommendCount%></span>
-          <span class="badge badge-inverse"><i class="icon-thumbs-down icon-white"></i> <%=disagreeCount%></span>
+          <span class="label label-success"><i class="icon-thumbs-up icon-white"></i> <%=recommendCount%></span>
+          <span class="label label-inverse"><i class="icon-thumbs-down icon-white"></i> <%=disagreeCount%></span>
       </div>
 
       <div class="comment ">
-          <button class="btn btn-info"><i class="icon-comment icon-white"></i> <%=childCount%></button>
+          <button class="btn btn-info btn-mini"><i class="icon-comment icon-white"></i> <%=childCount%></button>
       </div>
 
       <div class="article ">
