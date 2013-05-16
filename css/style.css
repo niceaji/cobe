@@ -22,7 +22,7 @@ h3 {
 }
 .item blockquote{
 	/*border-color:#999;*/
-	margin:10px 10px 0 10px;
+	margin:3px 10px 0 10px;
 	letter-spacing: -1px;
 	
 }
@@ -34,7 +34,7 @@ h3 {
 .item .article {
 	/*font-size:120%;*/
 	/*margin: 10px 0;*/
-	padding: 5px 20px 0px 20px;
+	padding: 5px 20px 0px 10px;
 	/*border-top:3px solid #ddd;*/
 	/*clear:both;*/
 	/*padding-top:10px;*/
@@ -46,10 +46,10 @@ h3 {
 .item .comment a:first-child {
 	margin-left: 10px;
 }
-.item .badge-wrap {
+.item .label-wrap {
 	text-align: right;
 }
-.item .badge-wrap span:last-child {
+.item .label-wrap span:last-child {
 	margin-right: 10px;
 }
 
