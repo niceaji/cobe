@@ -37,7 +37,7 @@
         <p><%=content%></p>
         <small>
           <i class="icon-user"></i>
-          <a href="#"><%=name%></a> 
+          <a href="<%=MY_LINK.replace("#{userid}",userid).replace("#{name}",name) %>" target="_blank"><%=name%></a> 
           <a href="#" class="time">4분전</a>
         </small>
       </blockquote>
