@@ -40,7 +40,7 @@
         <p><%=content%></p>
         <small>
           <i class="icon-user"></i>
-          <a class="name" ef="http://media.daum.net/netizen/mycomment?rMode=otherMy&allComment=T&userId=<%=userid%>&daumName=<%=name%>" target="_blank"><%=name%></a> 
+          <a class="name" href="http://media.daum.net/netizen/mycomment?rMode=otherMy&allComment=T&userId=<%=userid%>&daumName=<%=name%>" target="_blank"><%=name%></a> 
           <a href="#" class="time timeago" title="<%=new Date(time)%>"></a>
         </small>
       </blockquote>
@@ -51,7 +51,7 @@
       </div>
 
       <div class="comment ">
-          <a class="btn btn-info btn-mini" href="http://media.daum.net/mainnews/newsview?rMode=view&allComment=T&commentId=<%=id%>&newsId=<%=newsid%>"  target="_blank">
+          <a class="btn <%=(childCount>0) ? "btn-info":"btn-inverse" %> btn-mini" href="http://media.daum.net/mainnews/newsview?rMode=view&allComment=T&commentId=<%=id%>&newsId=<%=newsid%>"  target="_blank">
           <i class="icon-comment icon-white"></i> <%=childCount%></a>
       </div>
 
