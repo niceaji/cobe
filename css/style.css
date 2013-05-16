@@ -7,17 +7,21 @@ h3 {
 .container {
 	/*width:980px;*/
 }
+.item-wrap {
+	
+}
 .item {
-	background-color: #eee;
+	/*background-color: #eee;*/
 	/*border: 8px solid #eee;*/
-	-webkit-border-radius: 12px;
-	        border-radius: 12px;
+/*	-webkit-border-radius: 12px;
+	        border-radius: 12px;*/
 	margin-top:5px;
 	margin-bottom:5px;
+	border-bottom: 4px solid #eee;
 }
 .item blockquote{
-	border-color:#999;
-	margin:20px;
+	/*border-color:#999;*/
+	margin:10px 10px 0 10px;
 	letter-spacing: -1px;
 	
 }
@@ -30,7 +34,7 @@ h3 {
 	/*font-size:120%;*/
 	margin: 10px 0;
 	padding: 5px 20px 0px 30px;
-	border-top:3px solid #ddd;
+	/*border-top:3px solid #ddd;*/
 	/*clear:both;*/
 	/*padding-top:10px;*/
 }
