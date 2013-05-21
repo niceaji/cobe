@@ -55,10 +55,39 @@ var AppView = Backbone.View.extend({
 
 		this.collection = new ItemCollection();
 		this.listenTo(this.collection, "reset", this.addAll );
+		this.listenTo(this.collection, "error", this.error );
 		
-		this.collection.url = 'data/'+NOW_DATE+'.js';
-		this.collection.fetch({reset:true});
 
+		this.setDatePicker();
+
+	},
+	error : function(){
+
+	},
+	loadCollection : function(dateString){
+		// this.collection.url = 'data/'+NOW_DATE+'.js';
+		this.showDate(dateString);
+		this.collection.url = 'data/'+dateString+'.js';
+		this.collection.fetch({reset:true});
+	},
+
+	showDate : function(dateString){
+		$('#datetimepicker input').val( dateString );
+	},
+	setDatePicker : function(){
+
+		var picker = $('#datetimepicker').datetimepicker({
+				pickTime: false
+			,	startDate : moment("20130522","YYYYMMDD").toDate()
+			// maskInput : false
+		});
+
+		picker.on("changeDate",function(e){
+
+			// console.log(e.date.toString());
+			workspaceRouter.navigate( moment(e.date).format("YYYY-MM-DD"), {trigger: true});
+
+		});
 	},
 	addAll : function(){
 
@@ -76,7 +105,32 @@ var AppView = Backbone.View.extend({
 
 });
 
-new AppView();
+// var selectedDate
+
+
+var WorkspaceRouter = Backbone.Router.extend({
+
+	routes : {
+		":date" : "changeDate"
+	},
+	initialize : function(){
+
+		this.appView = new AppView();
+		Backbone.history.start();
+
+		if(!location.hash){
+			this.navigate(NOW_DATE, {trigger: true});
+		}
+	},
+	changeDate : function(dateString){
+		this.appView.loadCollection( dateString );
+	}
+
+});
+
+var workspaceRouter = new WorkspaceRouter();
+
+
 
 
 

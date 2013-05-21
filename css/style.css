@@ -4,6 +4,10 @@ body{
 h3 {
 	letter-spacing: -1px;
 }
+#datetimepicker {
+	margin:10px auto;
+	text-align: center;
+}
 .container {
 	/*width:980px;*/
 }

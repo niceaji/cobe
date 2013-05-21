@@ -7,6 +7,7 @@
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
 </head>
@@ -16,16 +17,27 @@
   <div class="navbar-inner">
     <div class="container" style="width: auto; padding: 0 20px;">
       <a class="brand" href="#">코멘트 베스트</a>
+<!--       <ul class="nav">
+        <li>
+
+        </li>
+      </ul> -->
       <ul class="nav pull-right">
-        <!-- <li><a href="#">Twitter</a></li> -->
+        <!-- <li></li> -->
         <li><a href="https://github.com/niceaji/cobe">About</a></li>
       </ul>
     </div>
   </div>
 </div>
 
-<div class="container item-wrap"></div>
+<div id="datetimepicker" class="input-append">
+  <input data-format="yyyy-MM-dd" type="text" readonly="readonly"></input>
+  <span class="add-on">
+    <i data-time-icon="icon-time" data-date-icon="icon-calendar" class="icon-calendar"></i>
+  </span>
+</div>
 
+<div class="container item-wrap"></div>
 
 <!-- template 
   <h3>2013.05.14</h3>
@@ -41,13 +53,13 @@
         <small>
           <i class="icon-user"></i>
           <a class="name" href="http://media.daum.net/netizen/mycomment?rMode=otherMy&allComment=T&userId=<%=userid%>&daumName=<%=name%>" target="_blank"><%=name%></a> 
-          <a href="#" class="time timeago" title="<%=new Date(time)%>"></a>
+          <a  class="time timeago" title="<%=new Date(time)%>"></a>
         </small>
       </blockquote>
       
       <div class="label-wrap ">
           <span class="label label-success"><i class="icon-heart icon-white"></i> <%=recommendCount - disagreeCount%></span>
-          <span class="label label-inverse"><i class="icon-thumbs-up icon-white"></i> <%=recommendCount%></span>
+          <span class="label label-inverse "><i class="icon-thumbs-up icon-white"></i> <%=recommendCount%></span>
           <span class="label label-inverse"><i class="icon-thumbs-down icon-white"></i> <%=disagreeCount%></span>
       </div>
 
@@ -65,6 +77,8 @@
 <script src="js/underscore-min.js"></script>
 <script src="js/backbone-min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/moment.min.js"></script>
 
 <script src="data/now.js"></script>
 <script src="js/jquery.timeago.js"></script>
