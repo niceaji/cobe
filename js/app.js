@@ -46,7 +46,7 @@ var AppView = Backbone.View.extend({
 		this.collection = new ItemCollection();
 		this.listenTo(this.collection, "reset", this.addAll );
 		
-		this.collection.url = 'data/20130516.js';
+		this.collection.url = 'data/'+NOW_DATE+'.js';
 		this.collection.fetch({reset:true});
 
 	},
