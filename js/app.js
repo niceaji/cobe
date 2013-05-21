@@ -84,22 +84,34 @@ var AppView = Backbone.View.extend({
 	},
 
 	showDate : function(dateString){
-		$('#datetimepicker input').val( dateString );
+		$('#datepicker input').val( dateString );
 	},
 	setDatePicker : function(){
 
-		var picker = $('#datetimepicker').datetimepicker({
-				pickTime: false
-			,	startDate : moment("20130522","YYYYMMDD").toDate()
-			// maskInput : false
-		});
+		// var picker = $('#datetimepicker').datetimepicker({
+		// 		pickTime: false
+		// 	,	startDate : moment("20130521","YYYYMMDD").toDate()
+		// 	// maskInput : false
+		// });
 
-		picker.on("changeDate",function(e){
+		// picker.on("changeDate",function(e){
 
-			// console.log(e.date.toString());
+		// 	// console.log(e.date.toString());
+
+		// 	workspaceRouter.navigate( moment(e.date).format("YYYY-MM-DD"), {trigger: true});
+		// 	// location.href='#'+moment(e.date).format("YYYY-MM-DD");
+
+		// });
+
+		$("#datepicker").datepicker({
+				language : 'kr'
+			,	startDate :  moment("20130521","YYYYMMDD").toDate()
+			,	todayHighlight : true
+	
+		}).on("changeDate",function(e){
 
 			workspaceRouter.navigate( moment(e.date).format("YYYY-MM-DD"), {trigger: true});
-			// location.href='#'+moment(e.date).format("YYYY-MM-DD");
+		// 	// location.href='#'+moment(e.date).format("YYYY-MM-DD");
 
 		});
 	},
@@ -148,6 +160,7 @@ var WorkspaceRouter = Backbone.Router.extend({
 	},
 	change : function(dateString, id){
 		selectedDateString = dateString;
+
 		this.appView.loadCollection( dateString );
 	}
 

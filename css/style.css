@@ -4,9 +4,9 @@ body{
 h3 {
 	letter-spacing: -1px;
 }
-#datetimepicker {
+#datepicker {
 	margin:10px auto;
-	text-align: center;
+	width:200px;
 }
 .alert {
 	position:absolute;
