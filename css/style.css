@@ -18,6 +18,12 @@ h3 {
 .container {
 	/*width:980px;*/
 }
+.twitter-share-button {
+	right:0;
+	position: absolute;
+	/*top:5px;*/
+}
+
 .item-wrap {
 	/*border:1px solid #ddd;*/
 	padding-bottom: 30px;
@@ -30,6 +36,10 @@ h3 {
 	margin-top:5px;
 	margin-bottom:5px;
 
+}
+.selected .item {
+	/*background-color: #ddd;*/
+	border-bottom-color: #000;
 }
 .item:hover {
 	background-color: #F2F2F2;
@@ -60,6 +70,11 @@ h3 {
 	/*border-top:3px solid #ddd;*/
 	/*clear:both;*/
 	/*padding-top:10px;*/
+}
+.item .article .time{
+	color:#999;
+	font-size: 90%;
+	/*padding-left: 10px;*/
 }
 
 .item .comment {

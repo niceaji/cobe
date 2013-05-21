@@ -7,7 +7,11 @@ var ItemModel = Backbone.Model.extend({
 
 		// console.log(data)
 		data.content = data.content.trim().replace(/\r\n/g,"<br>");
+		data.newsDate = (data.newsDate) ? moment(data.newsDate,"YYYYMMDDHHmmss").format("YYYY-MM-DD HH:mm") : "";
 		
+
+
+
 		return data;
 
 	}
@@ -29,13 +33,22 @@ var ItemView = Backbone.View.extend({
 	// className :'item-parent',
 	template : _.template($('#itemViewTemplate').html()),
 	events : {
-
+		"click .time" : "goPermalink"
 	},
 
 	initialize : function(){
 
 	},
+	goPermalink : function(e){
+		$(document.body).scrollTop(this.$el.offset().top);
 
+
+		$('div.selected').removeClass('selected');
+		this.$el.addClass("selected");
+
+		workspaceRouter.navigate( selectedDateString +"/"+ this.model.id , {trigger: false});
+		return false;
+	},
 	render :function(){
 		// console.log(this.model.toJSON())
 		this.$el.append( this.template( this.model.toJSON() ) );
@@ -84,14 +97,16 @@ var AppView = Backbone.View.extend({
 		picker.on("changeDate",function(e){
 
 			// console.log(e.date.toString());
+
 			workspaceRouter.navigate( moment(e.date).format("YYYY-MM-DD"), {trigger: true});
+			// location.href='#'+moment(e.date).format("YYYY-MM-DD");
 
 		});
 	},
 	addAll : function(){
 
 		// console.log(this.collection.models)
-
+		this.$el.html('');
 		this.collection.each(function(item,index){
 
 			item.set({index:index});
@@ -99,18 +114,28 @@ var AppView = Backbone.View.extend({
 
 		}.bind(this));
 
+
+		
 		$(".timeago").timeago();
-	}
+
+		var paths = Backbone.history.getHash().split("/");
+		if(paths[1]){
+			$('#p'+paths[1]+" .time").click();
+		}
+
+	},
+
 
 });
 
-// var selectedDate
 
+var selectedDateString = "";
 
 var WorkspaceRouter = Backbone.Router.extend({
 
 	routes : {
-		":date" : "changeDate"
+			":date" : "change",
+			":date/:id" : "change"
 	},
 	initialize : function(){
 
@@ -121,13 +146,14 @@ var WorkspaceRouter = Backbone.Router.extend({
 			this.navigate(NOW_DATE, {trigger: true});
 		}
 	},
-	changeDate : function(dateString){
+	change : function(dateString, id){
+		selectedDateString = dateString;
 		this.appView.loadCollection( dateString );
 	}
 
 });
 
-var workspaceRouter = new WorkspaceRouter();
+workspaceRouter = new WorkspaceRouter();
 
 
 

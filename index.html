@@ -42,22 +42,18 @@
 <div class="container item-wrap"></div>
 
 
-
-<!-- template 
-  <h3>2013.05.14</h3>
- <span class="badge badge-important"><%=index+1%>위</span>
--->
 <script type="text/template" id="itemViewTemplate">
-  <div class="item row">
+  <div class="item row" id="p<%=id%>">
+
       <div class="article ">
-          <a href="http://media.daum.net/v/<%=newsid%>" target="_blank"><i class="icon-pencil"></i> <%=newsTitle%></a>
+          <a href="http://media.daum.net/v/<%=newsid%>" target="_blank"><i class="icon-pencil"></i> <%=newsTitle%></a> <span class="time"><%=newsDate%></span>
       </div>
       <blockquote class="">
         <p><%=content%></p>
         <small>
           <i class="icon-user"></i>
           <a class="name" href="http://media.daum.net/netizen/mycomment?rMode=otherMy&allComment=T&userId=<%=userid%>&daumName=<%=name%>" target="_blank"><%=name%></a> 
-          <a  class="time timeago" title="<%=new Date(time)%>"></a>
+          <a  href="#" class="time timeago" title="<%=new Date(time)%>"></a>
         </small>
       </blockquote>
       
