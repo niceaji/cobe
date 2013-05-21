@@ -13,10 +13,16 @@ var ItemModel = Backbone.Model.extend({
 	}
 	
 });
+
+
+
 var ItemCollection = Backbone.Collection.extend({
 	model : ItemModel
 
 });
+
+
+
 var ItemView = Backbone.View.extend({
 
 	// el : $('.item-wrap'),
@@ -37,6 +43,10 @@ var ItemView = Backbone.View.extend({
 	}
 
 });
+
+
+
+
 var AppView = Backbone.View.extend({
 
 	el : '.item-wrap',
@@ -67,3 +77,17 @@ var AppView = Backbone.View.extend({
 });
 
 new AppView();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
