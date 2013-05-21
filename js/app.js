@@ -54,15 +54,14 @@ var AppView = Backbone.View.extend({
 	initialize : function(){
 
 		this.collection = new ItemCollection();
+
 		this.listenTo(this.collection, "reset", this.addAll );
 		this.listenTo(this.collection, "error", this.error );
-		
 
 		this.setDatePicker();
-
 	},
 	error : function(){
-
+		this.$el.html("<h4>데이터가 없습니다!</h4>");
 	},
 	loadCollection : function(dateString){
 		// this.collection.url = 'data/'+NOW_DATE+'.js';
