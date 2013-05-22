@@ -87,28 +87,16 @@ var AppView = Backbone.View.extend({
 	},
 	setDatePicker : function(){
 
-		// var picker = $('#datetimepicker').datetimepicker({
-		// 		pickTime: false
-		// 	,	startDate : moment("20130521","YYYYMMDD").toDate()
-		// 	// maskInput : false
-		// });
 
-		// picker.on("changeDate",function(e){
 
-		// 	// console.log(e.date.toString());
-
-		// 	workspaceRouter.navigate( moment(e.date).format("YYYY-MM-DD"), {trigger: true});
-		// 	// location.href='#'+moment(e.date).format("YYYY-MM-DD");
-
-		// });
-
-		$("#datepicker").datepicker({
+		var picker = $("#datepicker").datepicker({
 				language : 'kr'
 			,	startDate :  moment("20130521","YYYYMMDD").toDate()
 			,	todayHighlight : true
 	
 		}).on("changeDate",function(e){
-
+			
+			$('.datepicker').hide();
 			workspaceRouter.navigate( moment(e.date).format("YYYY-MM-DD"), {trigger: true});
 		// 	// location.href='#'+moment(e.date).format("YYYY-MM-DD");
 
