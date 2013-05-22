@@ -7,7 +7,7 @@ var ItemModel = Backbone.Model.extend({
 		// console.log(data)
 		data.content = data.content.trim().replace(/\r\n/g,"<br>");
 		data.newsDate = (data.newsDate) ? moment(data.newsDate,"YYYYMMDDHHmmss").format("YYYY-MM-DD HH:mm") : "";
-		
+		// data.timeago = jQuery.timeago();
 
 
 
@@ -78,7 +78,7 @@ var AppView = Backbone.View.extend({
 	loadCollection : function(dateString){
 		// this.collection.url = 'data/'+NOW_DATE+'.js';
 		this.showDate(dateString);
-		this.collection.url = 'data/'+dateString+'.js';
+		this.collection.url = 'data/'+dateString+'.js?'+(+new Date());
 		this.collection.fetch({reset:true});
 	},
 
