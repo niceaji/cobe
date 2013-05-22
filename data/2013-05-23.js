@@ -6,7 +6,7 @@
     "content": "수뢰공무원이 인권타령?\r\n\r\n셀프 감금에 버금가는 셀프 탄압..",
     "time": 1369235962000,
     "dateStr": "2013-05-23T00:19:22+09:00",
-    "recommendCount": 520,
+    "recommendCount": 535,
     "disagreeCount": 12,
     "childCount": 2,
     "newsid": "20130523001505742",
