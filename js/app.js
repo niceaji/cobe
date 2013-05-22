@@ -1,6 +1,5 @@
 
 
-
 var ItemModel = Backbone.Model.extend({
 
 	parse : function(data){
@@ -40,7 +39,7 @@ var ItemView = Backbone.View.extend({
 
 	},
 	goPermalink : function(e){
-		$(document.body).scrollTop(this.$el.offset().top);
+		$(window).scrollTop(this.$el.offset().top);
 
 
 		$('div.selected').removeClass('selected');
