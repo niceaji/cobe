@@ -6,7 +6,7 @@
     "content": "개나소나 다 정치냐 양아치야",
     "time": 1369322593000,
     "dateStr": "2013-05-24T00:23:13+09:00",
-    "recommendCount": 536,
+    "recommendCount": 546,
     "disagreeCount": 13,
     "childCount": 2,
     "newsid": "20130524001406755",
