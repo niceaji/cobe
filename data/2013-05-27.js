@@ -6,7 +6,7 @@
     "content": "박그네의 종주국 미국서\r\nCIA가 선거개입 여론조작, 조직적 부정선거\r\nFBI가 은폐조작, 증거인멸 했다면\r\n\r\n발칵 뒤집힌다\r\n전 대통령 수사. 현 대통령 사임감 ☞  추천\r\n\r\n그냥 넘어간다 ☞   비추천",
     "time": 1369602742000,
     "dateStr": "2013-05-27T06:12:22+09:00",
-    "recommendCount": 790,
+    "recommendCount": 836,
     "disagreeCount": 12,
     "childCount": 13,
     "newsid": "20130527034106967",
