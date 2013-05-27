@@ -6,7 +6,7 @@
     "content": "역시 쿨하네ㅋ예전 방송작가가 꼽은 성격제일 쿨하고 좋은 연예인 여자부문1위.",
     "time": 1369670195000,
     "dateStr": "2013-05-28T00:56:35+09:00",
-    "recommendCount": 562,
+    "recommendCount": 569,
     "disagreeCount": 54,
     "childCount": 5,
     "newsid": "20130528004706472",
