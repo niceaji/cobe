@@ -6,7 +6,7 @@
     "content": "가정불화루머?여기서 처음 듣는다. 누가 만든 루머야?",
     "time": 1369753389000,
     "dateStr": "2013-05-29T00:03:09+09:00",
-    "recommendCount": 572,
+    "recommendCount": 577,
     "disagreeCount": 30,
     "childCount": 7,
     "newsid": "20130528234103705",
