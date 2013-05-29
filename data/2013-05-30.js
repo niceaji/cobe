@@ -6,7 +6,7 @@
     "content": "솔직해서 보기 좋습니다 . 팬은 아니었는데 팬이 될것 같네요. 앞으로도 지금처럼 당당하고 열심히 살아주세요 화이팅!",
     "time": 1369839964000,
     "dateStr": "2013-05-30T00:06:04+09:00",
-    "recommendCount": 1015,
+    "recommendCount": 1029,
     "disagreeCount": 116,
     "childCount": 8,
     "newsid": "20130529235105485",
