@@ -6,7 +6,7 @@
     "content": "자꾸 이철희소장님이 좋아진다~~~",
     "time": 1369927316000,
     "dateStr": "2013-05-31T00:21:56+09:00",
-    "recommendCount": 550,
+    "recommendCount": 555,
     "disagreeCount": 42,
     "childCount": 14,
     "newsid": "20130531000905168",
