@@ -6,7 +6,7 @@
     "content": "무조건 한국 뷰티풀하고 친절하다고 아부떠는거보단 솔직해서 좋다 ",
     "time": 1369927674000,
     "dateStr": "2013-05-31T00:27:54+09:00",
-    "recommendCount": 540,
+    "recommendCount": 542,
     "disagreeCount": 16,
     "childCount": 5,
     "newsid": "20130530235106039",
