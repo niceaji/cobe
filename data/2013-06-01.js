@@ -20,7 +20,7 @@
     "content": "그럼지금까지 왜 가만있었냐. ",
     "time": 1370012530000,
     "dateStr": "2013-06-01T00:02:10+09:00",
-    "recommendCount": 1185,
+    "recommendCount": 1191,
     "disagreeCount": 104,
     "childCount": 71,
     "newsid": "20130531235709105",
