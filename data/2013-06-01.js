@@ -6,9 +6,9 @@
     "content": "살인을 하고 또 클럽에 가서 술을 마셔? 이걸 살게 둬야해?",
     "time": 1370042030000,
     "dateStr": "2013-06-01T08:13:50+09:00",
-    "recommendCount": 1286,
+    "recommendCount": 1349,
     "disagreeCount": 32,
-    "childCount": 27,
+    "childCount": 29,
     "newsid": "20130601080606648",
     "newsTitle": "대구 여대생 살해사건 새 용의자 검거..범행 시인",
     "newsDate": "20130601080606"
@@ -20,9 +20,9 @@
     "content": "국민들이 무지한 탓을 누구한테 따지긋노 에휴",
     "time": 1370039115000,
     "dateStr": "2013-06-01T07:25:15+09:00",
-    "recommendCount": 538,
+    "recommendCount": 555,
     "disagreeCount": 8,
-    "childCount": 16,
+    "childCount": 17,
     "newsid": "20130601042114702",
     "newsTitle": "MB정부 5년 나랏빚 年8.1%씩 증가",
     "newsDate": "20130601042114"
