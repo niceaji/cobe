@@ -8,7 +8,7 @@
     "dateStr": "2013-06-05T00:08:42+09:00",
     "recommendCount": 1001,
     "disagreeCount": 141,
-    "childCount": 24,
+    "childCount": 25,
     "newsid": "20130604235806204",
     "newsTitle": "이종석 \"아이유 불화설? 분장 아이디어 제의 짜증\" 솔직고백",
     "newsDate": "20130604235806"
