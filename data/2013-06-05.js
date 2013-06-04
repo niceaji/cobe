@@ -6,7 +6,7 @@
     "content": "하기싫은거 자꾸시키면 짜증나긴하지",
     "time": 1370358522000,
     "dateStr": "2013-06-05T00:08:42+09:00",
-    "recommendCount": 1010,
+    "recommendCount": 1014,
     "disagreeCount": 142,
     "childCount": 25,
     "newsid": "20130604235806204",
