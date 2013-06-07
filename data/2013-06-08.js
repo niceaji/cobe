@@ -6,7 +6,7 @@
     "content": "야 인간아ㅋㅋㅋ",
     "time": 1370617722000,
     "dateStr": "2013-06-08T00:08:42+09:00",
-    "recommendCount": 570,
+    "recommendCount": 573,
     "disagreeCount": 13,
     "childCount": 0,
     "newsid": "20130608000508576",
