@@ -6,7 +6,7 @@
     "content": "진짜 연애복은 따로 있는듯.. 외모가 어떻든 계속 만나는 사람은 만나더라고. ",
     "time": 1370877305000,
     "dateStr": "2013-06-11T00:15:05+09:00",
-    "recommendCount": 860,
+    "recommendCount": 862,
     "disagreeCount": 12,
     "childCount": 4,
     "newsid": "20130611000704362",
