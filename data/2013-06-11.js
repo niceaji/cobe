@@ -20,7 +20,7 @@
     "content": "태어난 딸을 위해 고민하여 부모가 지어준 이름을 개명하라고 하다니...\r\n\r\n일제시대냐?\r\n\r\n자신의 취미가 타인에게 재미로만 보일까? ",
     "time": 1370876859000,
     "dateStr": "2013-06-11T00:07:39+09:00",
-    "recommendCount": 842,
+    "recommendCount": 847,
     "disagreeCount": 8,
     "childCount": 6,
     "newsid": "20130610234806282",
