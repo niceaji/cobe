@@ -7,7 +7,7 @@
     "time": 1371050963000,
     "dateStr": "2013-06-13T00:29:23+09:00",
     "recommendCount": 650,
-    "disagreeCount": 90,
+    "disagreeCount": 91,
     "childCount": 5,
     "newsid": "20130612234903732",
     "newsTitle": "'라스' 홍진영 \"축구선수와 교제..인터넷에 나와\" 솔직고백",
