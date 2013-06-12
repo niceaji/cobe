@@ -1,1 +1,1 @@
-var NOW_DATE='2013-06-12'; 
+var NOW_DATE='2013-06-13'; 
