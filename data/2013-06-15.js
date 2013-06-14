@@ -6,7 +6,7 @@
     "content": "지금 생각해도 진짜 동생이 생각없던것같다...",
     "time": 1371222566000,
     "dateStr": "2013-06-15T00:09:26+09:00",
-    "recommendCount": 687,
+    "recommendCount": 691,
     "disagreeCount": 58,
     "childCount": 2,
     "newsid": "20130614234804923",
