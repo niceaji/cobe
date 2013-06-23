@@ -6,11 +6,25 @@
     "content": "박근혜 새누리당놈들 이따위로 추잡하게 나오냐?",
     "time": 1372020753000,
     "dateStr": "2013-06-24T05:52:33+09:00",
-    "recommendCount": 1468,
-    "disagreeCount": 98,
-    "childCount": 46,
+    "recommendCount": 1516,
+    "disagreeCount": 100,
+    "childCount": 47,
     "newsid": "20130624024133140",
     "newsTitle": "'국정원 사건' 진보 촛불 vs 보수 맞불 집회",
     "newsDate": "20130624024133"
+  },
+  {
+    "id": 181653960,
+    "name": "paula",
+    "userid": "vPK_wu3ezYs0",
+    "content": "사태는 국정원의 댓글공작에서 점화되고 있지만 이는 아직 변죽에 불과하다. 18대대선 부정선거의 진짜 몸통은 새누리당-국정원-선관위 이 3자가 결탁하여 저지른 개표조작 의혹에 있다고 본다.\r\n댓글공작에서 점화된 이 사태는 개표조작의혹으로 비화되어 마침내 4.19와 같은 사태가 오지말라는 보장이 없다. ",
+    "time": 1372019590000,
+    "dateStr": "2013-06-24T05:33:10+09:00",
+    "recommendCount": 537,
+    "disagreeCount": 28,
+    "childCount": 15,
+    "newsid": "20130624031807581",
+    "newsTitle": "박 대통령 방중 앞두고 '주말열공'",
+    "newsDate": "20130624031807"
   }
 ]
