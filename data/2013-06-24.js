@@ -6,7 +6,7 @@
     "content": "박근혜 새누리당놈들 이따위로 추잡하게 나오냐?",
     "time": 1372020753000,
     "dateStr": "2013-06-24T05:52:33+09:00",
-    "recommendCount": 977,
+    "recommendCount": 1021,
     "disagreeCount": 80,
     "childCount": 29,
     "newsid": "20130624024133140",
