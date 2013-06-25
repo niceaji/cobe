@@ -6,7 +6,7 @@
     "content": "이걸 금지령으로\r\n내려야 안하는 사람들...\r\n\r\n평소에는 도대체 어떨까?",
     "time": 1372172959000,
     "dateStr": "2013-06-26T00:09:19+09:00",
-    "recommendCount": 575,
+    "recommendCount": 580,
     "disagreeCount": 7,
     "childCount": 13,
     "newsid": "20130625211706916",
